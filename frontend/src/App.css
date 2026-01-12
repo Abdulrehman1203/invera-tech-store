@@ -1,0 +1,48 @@
+#root {
+  min-height: 100vh;
+}
+
+/* Global Container */
+.app-container {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Loading Spinner */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  gap: 12px;
+}
+
+.loading::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  border: 3px solid var(--bg-glass);
+  border-top-color: var(--accent-purple);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error State */
+.error {
+  text-align: center;
+  padding: 3rem;
+  color: #f5576c;
+  font-size: 1.1rem;
+  background: rgba(245, 87, 108, 0.1);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(245, 87, 108, 0.2);
+  margin: 2rem;
+}
