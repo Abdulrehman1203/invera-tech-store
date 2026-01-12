@@ -1,4 +1,4 @@
-# E-Commerce Store
+# Invera-Tech Store
 
 A full-stack e-commerce application built with Django REST Framework and React.
 
